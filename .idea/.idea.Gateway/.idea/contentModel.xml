@@ -3,12 +3,11 @@
   <component name="ContentModelStore">
     <e p="C:\Users\palpo\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_Gateway.884698083.00" t="ExcludeRecursive" />
     <e p="C:\Users\palpo\RiderProjects\Gateway" t="IncludeFlat">
-      <e p="Gateway" t="IncludeRecursive">
-        <e p="App.config" t="Include" />
+      <e p="ArduinoG" t="IncludeRecursive">
+        <e p="ArduinoG.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Gateway.csproj" t="IncludeRecursive" />
-        <e p="Getaway.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>

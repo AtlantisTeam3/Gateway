@@ -1,0 +1,3 @@
+C:\Users\palpo\RiderProjects\Gateway\Gateway\obj\Debug\Gateway.csprojResolveAssemblyReference.cache
+C:\Users\palpo\RiderProjects\Gateway\Gateway\obj\Debug\Gateway.exe
+C:\Users\palpo\RiderProjects\Gateway\Gateway\obj\Debug\Gateway.pdb
