@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="RIDER_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$/../../../DemoWCF/DemoWCF" />
-    <content url="file://$MODULE_DIR$/../../../DemoWCF/Host" />
-    <content url="file://$MODULE_DIR$/../../../DemoWCF/WCFInterfaces" />
-    <content url="file://$MODULE_DIR$/../../../DemoWCF/WCFServices" />
     <content url="file://$MODULE_DIR$/../.." />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

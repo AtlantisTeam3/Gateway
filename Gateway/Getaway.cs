@@ -16,17 +16,6 @@ namespace Gateway
         static void Main(string[] args)
         {
             
-
-            
-            Console.WriteLine("Prêt ?");
-            
-            if(Console.Read() != 0)
-            
-            channelFactory=new ChannelFactory<IMesServices>("myConfig");
-
-
-
-            services = channelFactory.CreateChannel();
 //            Console.WriteLine("Hello World!");
             
             //Provisoire - Manque Delegates
@@ -52,21 +41,6 @@ namespace Gateway
         }
         
         
-        
-
-        private static ChannelFactory<WCFInterfaces.IMesServices> channelFactory = null;
-        
-        private static WCFInterfaces.IMesServices services = null;
-        private static SerialPort serialPort;
-        private static void DataReceivedHandler(object sender, SerialDataReceivedEventArgs e)
-        {
-            string indata = serialPort.ReadLine();
-//            ValueFromAr.Text = indata+" °C";
-            
-
-            Console.WriteLine(indata+" °C");
-        }
-
         public static void DmArToPc()
         {
             Console.WriteLine("Tu viens d'acceder a DmArToPc");
@@ -75,24 +49,11 @@ namespace Gateway
             serialPort.BaudRate = 9600; //Set your baud rate
 //            serialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
             serialPort.Open();
-//            string a = serialPort.ReadExisting();
+            string a = serialPort.ReadExisting();
+            Console.WriteLine(a);
 //            return a;
-            while (true)
-            {
-                try
-                {
-                    string a = serialPort.ReadExisting();
-                    Thread.Sleep(500);
-                    Console.WriteLine(services.SaveDatas(a));
-                }
-                catch 
-                {
-                    channelFactory.Abort();
-                    throw;
-                }
-                
-            }
         }
+        
 
         public static void DmPcToAr()
         {
