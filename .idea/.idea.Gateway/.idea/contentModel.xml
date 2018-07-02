@@ -1,16 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/.Rider2018.1/system/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_Gateway.-689714657.00" t="ExcludeRecursive" />
-    <e p="$PROJECT_DIR$" t="IncludeFlat">
+    <e p="C:\Users\palpo\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_Gateway.884698083.00" t="ExcludeRecursive" />
+    <e p="C:\Users\palpo\RiderProjects\DemoWCF\DemoWCF" t="IncludeRecursive">
+      <e p="App.xaml" t="Include" />
+      <e p="App.xaml.cs" t="Include" />
+      <e p="ArToPCPage.xaml" t="Include" />
+      <e p="ArToPCPage.xaml.cs" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="DemoWCF.csproj" t="IncludeRecursive" />
+      <e p="MainWindow.xaml" t="Include" />
+      <e p="MainWindow.xaml.cs" t="Include" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="PCToArPage.xaml" t="Include" />
+      <e p="PCToArPage.xaml.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+        <e p="Resources.Designer.cs" t="Include" />
+        <e p="Resources.resx" t="Include" />
+      </e>
+    </e>
+    <e p="C:\Users\palpo\RiderProjects\DemoWCF\Host" t="IncludeRecursive">
+      <e p="App.config" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Host.csproj" t="IncludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Program.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+      </e>
+    </e>
+    <e p="C:\Users\palpo\RiderProjects\DemoWCF\WCFInterfaces" t="IncludeRecursive">
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="IMesServices.cs" t="Include" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Properties" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+      </e>
+      <e p="WCFInterfaces.csproj" t="IncludeRecursive" />
+    </e>
+    <e p="C:\Users\palpo\RiderProjects\DemoWCF\WCFServices" t="IncludeRecursive">
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="MesServices.cs" t="Include" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages.config" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+      </e>
+      <e p="WCFServices.csproj" t="IncludeRecursive" />
+    </e>
+    <e p="C:\Users\palpo\RiderProjects\Gateway" t="IncludeFlat">
       <e p="Gateway" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
         <e p="Gateway.csproj" t="IncludeRecursive" />
-        <e p="Program.cs" t="Include" />
+        <e p="Getaway.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="obj" t="ExcludeRecursive" />
       </e>
       <e p="Gateway.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

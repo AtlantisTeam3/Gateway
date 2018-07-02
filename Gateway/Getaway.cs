@@ -1,15 +1,33 @@
 ﻿using System;
 using System.IO.Ports;
 using System.Threading;
+using System.ServiceModel;
+using WCFInterfaces;
 using System.Threading.Tasks;
+using System.Diagnostics;
+using System.Reflection;
+using System.Text;
 
 namespace Gateway
 {
-    class Program
+    class Getaway 
     {
+        
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+
+            
+            Console.WriteLine("Prêt ?");
+            
+            if(Console.Read() != 0)
+            
+            channelFactory=new ChannelFactory<IMesServices>("myConfig");
+
+
+
+            services = channelFactory.CreateChannel();
+//            Console.WriteLine("Hello World!");
             
             //Provisoire - Manque Delegates
             Console.WriteLine("DmArToPc : 1 DmPcToAr : 2");
@@ -32,19 +50,47 @@ namespace Gateway
                     break;
             }
         }
+        
+        
+        
+
+        private static ChannelFactory<WCFInterfaces.IMesServices> channelFactory = null;
+        
+        private static WCFInterfaces.IMesServices services = null;
+        private static SerialPort serialPort;
+        private static void DataReceivedHandler(object sender, SerialDataReceivedEventArgs e)
+        {
+            string indata = serialPort.ReadLine();
+//            ValueFromAr.Text = indata+" °C";
+            
+
+            Console.WriteLine(indata+" °C");
+        }
 
         public static void DmArToPc()
         {
             Console.WriteLine("Tu viens d'acceder a DmArToPc");
             SerialPort serialPort = new SerialPort();
-            serialPort.PortName = "COM4";//Set your board COM
+            serialPort.PortName = "COM5";//Set your board COM
             serialPort.BaudRate = 9600; //Set your baud rate
+//            serialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
             serialPort.Open();
+//            string a = serialPort.ReadExisting();
+//            return a;
             while (true)
             {
-                string a = serialPort.ReadExisting();
-                Console.WriteLine(a);
-                Thread.Sleep(200);
+                try
+                {
+                    string a = serialPort.ReadExisting();
+                    Thread.Sleep(500);
+                    Console.WriteLine(services.SaveDatas(a));
+                }
+                catch 
+                {
+                    channelFactory.Abort();
+                    throw;
+                }
+                
             }
         }
 
